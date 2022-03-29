@@ -12,6 +12,42 @@
     <section>
         <h2>What is NodeJs?</h2>
         <p>NodeJs is an environment to run JavaScript outside of the browser. <br>More info. <a href="https://nodejs.org/en/">nodejs.org</a></p>
+        <h3>Major difference between Browser JavaScript and NodeJs.</h3>
+        <p>Working on NodeJs we have no access to browser APIS.
+            <br><br>Unlike browsers apps that are interactive for example users click the button or toggles the nav, with node we build server side apps. Node apps will only consist of pure logic, without the graphical interface. So nowhere in the app we will write <b>document.querySelector().</b>
+        </p>
+        <table>
+            <tr>
+                <th>Browser</th>
+                <th>Node.js</th>
+            </tr>
+            <tr>
+                <td>DOM</td>
+                <td>No DOM</td>
+            </tr>
+            <tr>
+                <td>Window</td>
+                <td>No Window</td>
+            </tr>
+            <tr>
+                <td>Interactive Apps</td>
+                <td>Server Side Apps</td>
+            </tr>
+            <tr>
+                <td>No Filesystem</td>
+                <td>Filesystem</td>
+            </tr>
+            <tr>
+                <td>Fragmentation</td>
+                <td>Versions</td>
+            </tr>
+            <tr>
+                <td>ES6 Modules</td>
+                <td>CommonJS</td>
+            </tr>
+        </table>
+        <p>If we build a browser app and if our users browser does not support a specific feature it is our responsability to fix it, otherwise our app might have bugs.<br>Unlike browsers where modules are optional, in NodeJs you have access to modules by default.</p>
+        <p>In order to check if NodeJs was successfully installed, in your terminal type <i>node --version</i> and you should see your version number. If don´t, you will have to troubleshoot the error.</p>
     </section>
 </body>
 </html>

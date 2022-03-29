@@ -1,0 +1,15 @@
+* {
+
+}
+html, body {
+    background: #eeeeee;
+    color: #1F1F1F;
+}
+th, td {
+    text-align: center;
+    padding: 3px 5px;
+    outline: #000 solid 1px;
+}
+section {
+    width: 80%;
+}
