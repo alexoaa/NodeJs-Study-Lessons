@@ -48,8 +48,25 @@
         </table>
         <p>If we build a browser app and if our users browser does not support a specific feature it is our responsability to fix it, otherwise our app might have bugs.<br>Unlike browsers where modules are optional, in Node.js you have access to modules by default.</p>
         <p>In order to check if Node.js was successfully installed, in your terminal type <i>node --version</i> and you should see your version number. If don´t, you will have to troubleshoot the error.</p>
-        <h4>Evaluate our code with Node</h4>
-        <p>We have two options:<br><br>REPL -> Stands for Read Eval Print Loop. (For playing around) <br><br><img src="./assests/img/REPLex.png" alt="REPL Example"><br><br><br> CLI -> Command Line Interface. Executable terminal, running our app code in Node. (Use essentially for everything.)</p>
+        <h3>Evaluate our code with Node</h3>
+        <p>We have two options:<br><br>REPL -> Stands for Read Eval Print Loop. (For playing around) <br><br>
+            <img src="./assests/img/REPLex.png" alt="REPL Example"><br><br><br> 
+            CLI -> Command Line Interface. Executable terminal, running our app code in Node. (Use essentially for everything.)<br><br>
+            <img src="./assests/img/CLIex.png" alt="CLI Example"><br><br>
+            Ctrl + C - To stop the process in the terminal.
+        </p>
+        <h4>Global variables</h4>
+        <p>Are variables that anywhere in your application you can access them.
+            <br>Example:<br> 
+            <b><i>__dirname</i></b> - path to current directory<br>
+            <b><i>__filename</i></b> - file name<br>
+            <b><i>require</i></b> - function to use modules (CommonJS)<br>
+            <b><i>module</i></b> - info aboutcurrent module (file)<br>
+            <b><i>process</i></b> - info about environment where the program is being executed.<br>
+        </p>
+        <h4>Modules</h4>
+        <p>To have a clean code, smaller files and more structure to our application, you need to split the code in different modules/files.<br><br>CommonJS, every file in Node is a module (by default).<br>Modules - Encapsulated Code (only shared minimum).
+        </p>
     </section>
 </body>
 </html>
