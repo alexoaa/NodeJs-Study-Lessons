@@ -1,10 +1,11 @@
 // *** Modules ***
-
-// import { sayHi } from './1-ModulesFunctions.js';
-// import names from './1-ModulesNames.js';
-
-
+// ! CommonJS
 const modulesFunct= require('./1-ModulesFunctions.js');
-const names = require('./1-ModulesNames.js');
-console.log(names);
-modulesFunct.sayHi(names.name1);
+const data = require('./1-ModulesNames.js');
+
+console.log(data); //Object named data that has all data imported from ModulesNmaes.js
+modulesFunct.sayHi(data.name1);
+modulesFunct.sayHi(data.person.name) //Accessing object data, then object person then property name
+data.items.forEach(item => {  //Accessing the items of the imported array in the object data
+    console.log(item);
+});
