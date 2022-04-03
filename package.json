@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-ModulesApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexoaa/NodeJs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "alexoa_a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexoaa/NodeJs/issues"
+  },
+  "homepage": "https://github.com/alexoaa/NodeJs#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
