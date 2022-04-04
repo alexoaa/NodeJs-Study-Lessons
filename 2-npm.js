@@ -14,4 +14,4 @@
 // Running in terminal command, npm init -y (everything default)
 
 require('colors');
-console.log("Hello there".red);
+console.log("Hello there".bold.white);
