@@ -6,7 +6,7 @@ const path = './EventLoopExamples/first.txt';
 const path2 = './EventLoopExamples/second.txt';
 const mixedPath = './EventLoopExamples/mixed.txt';
 
-// WITHOUT PROMISES
+//* WITHOUT PROMISES
 /* readFile(path,'utf8',(err,data)=>{
     if(err){
         return;
@@ -23,7 +23,7 @@ const mixedPath = './EventLoopExamples/mixed.txt';
 }); */
 
 
-// WITH PROMISES
+//* WITH PROMISES
 /* const getText = (path)=>{
     return new Promise((res,rej)=>{
         readFile(path,'utf8',(err,data)=>{
@@ -40,7 +40,7 @@ const mixedPath = './EventLoopExamples/mixed.txt';
 //     .catch(error => console.log(error));
 
 
-// WITH ASYNC - AWAIT
+//* WITH ASYNC - AWAIT
 /* const start = async() => {
     try {
         const first = await getText(path);
@@ -52,7 +52,7 @@ const mixedPath = './EventLoopExamples/mixed.txt';
 }
 start(); */
 
-// USING UTIL MODULE AND PROMISIFY FUNCT
+//* USING UTIL MODULE AND PROMISIFY FUNCT
 const util = require('util');
 const readFilePromise = util.promisify(readFile);
 const writeFilePromise = util.promisify(writeFile);
