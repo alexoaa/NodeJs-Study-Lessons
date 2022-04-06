@@ -10,15 +10,15 @@ const {readFile, writeFile} = require("fs");
 require('colors');
 console.log('Starting readFile EventLoop example:'.red);
 console.log('started a first task'.blue);
-readFile('./first.txt', 'utf8', (err,result)=>{
+readFile('./EventLoopExamples/first.txt', 'utf8', (err,result)=>{
     if (err) {
         console.log(err);
-        writeFile('./first.txt','Happening first task', (err,result)=>{
+        writeFile('./EventLoopExamples/first.txt','Happening first task', (err,result)=>{
             if (err) {
                 console.log(err);
                 return;
             }
-            readFile('./first.txt', 'utf8', (err,result)=>{
+            readFile('./EventLoopExamples/first.txt', 'utf8', (err,result)=>{
                 if (err) {
                     console.log(err);
                     return;
