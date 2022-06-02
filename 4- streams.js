@@ -1,5 +1,5 @@
 /* STREAMS */
-// Streams are used ro read or write sequentially
+// Streams are used to read or write sequentially
 /* Types: 
 Writeable - write data sequentially, 
 Readable - used to read data sequentially, 
