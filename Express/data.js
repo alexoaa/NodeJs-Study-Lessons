@@ -12,7 +12,7 @@ const dogs = [
         desc: 'Unlike browsers apps that are interactive for example users click the button or toggles the nav, with node we build server side apps. Node apps will only consist of pure logic, without the graphical interface. So nowhere in the app we will write <b>document.querySelector()'
     },
     {
-        breed: 'Mestiza',
+        breed: 'Mestizo',
         name: 'Mora',
         image: 'mora.jpg',
         desc: 'Unlike browsers apps that are interactive for example users click the button or toggles the nav, with node we build server side apps. Node apps will only consist of pure logic, without the graphical interface. So nowhere in the app we will write <b>document.querySelector()'

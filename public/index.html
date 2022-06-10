@@ -11,7 +11,17 @@
     <h1>Node.js Course</h1>
     <section>
         <h2>What is Node.js?</h2>
-        <p>Node.js is an environment to run JavaScript outside of the browser. <br>More info. <b><a href="https://nodejs.org/en/" target="_blank">Node.js</a></b></p>
+        <p>Node.js is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications using JavaScript outside of the browser. (i.e. running directly on a computer or server OS). <br>More info. <b><a href="https://nodejs.org/en/" target="_blank">Node.js</a></b></p>
+        <h3>Benefits of using NodeJs from web server development perspective</h3>
+        <ul>
+            <li>Great performance! Node was designed to optimize throughput and scalability in web applications and is a good solution for many common web-development problems.</li><br>
+            <li>Code is written in "plain old JavaScript", which means taht less time is spent dealing with "context shift" between languages when you are writing both, client-side and server-side. (FrontEnd-BackEnd)</li><br>
+            <li>Many other new and popular languages compile/convert into JavSScript so you can also use TypeScript, CoffeeScript, ClojureScript, Scala, LiveScript, etc.</li><br>
+            <li>The node package manager (NPM) provides access to hundreds of thousands of reusable packages, It also has best-in-class dependency resolution and can also be used to automate most of the build toolchain.</li><br>
+            <li>NodeJs is portable. Is is available on Microsoft Windows, macOS, Linux, Solaris, FreeBSD, OpenBSD, WebOS, and NonStop OS. Is is well supported by manu web hosting providers, that often provide specific infrastructure and documentation for hosting Node sites.</li><br>
+            <li>Is has a very active third party ecosystem and developer community, with lots of people who are willing to help.</li>
+        </ul>
+
         <h3>Major difference between Browser JavaScript and Node.js.</h3>
         <p>Working on Node.js we have no access to browser APIS.
             <br><br>Unlike browsers apps that are interactive for example users click the button or toggles the nav, with node we build server side apps. Node apps will only consist of pure logic, without the graphical interface. So nowhere in the app we will write <b>document.querySelector().</b>
@@ -70,14 +80,38 @@
         <h4>CommonJS and ES Modules</h4>
         <p>Since Node 14, there are now two kinds of scripts: there are old-style <b>CommonJS (CJS) scripts</b> and <b>new-style ESM scripts (aka MJS)</b>.<br><br>CJS scripts use <i>require()</i> and <i>module.exports;<br></i> ESM scripts use <i>import</i> and <i>export</i>.<br><br><b>More info <a href="https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1" target="_blank">CommonJS and ES Modules.</a></b></p>
     </section>
-    <h2>NPM</h2>
-    <h3>Node Package Manager</h3>
-    <p>More info <a href="https://www.npmjs.com/">npm</a><br><br>
-        npm - global command, comes with node<br>
-        <b>npm --version</b><br>
-        local dependency - use it only int his particular project<br>
-        <b>npm i &ltpackageName></b><br>
-        global dependency - use it in any projects<br>
-        <b>npm install -g  &ltpackageName></b></p>
+    <section>
+        <h2>NPM</h2>
+        <h3>Node Package Manager</h3>
+        <p>More info <a href="https://www.npmjs.com/">npm</a><br><br>
+            npm - global command, comes with node<br>
+            <b>npm --version</b><br>
+            local dependency - use it only int his particular project<br>
+            <b>npm i &ltpackageName></b><br>
+            global dependency - use it in any projects<br>
+            <b>npm install -g  &ltpackageName></b>
+        </p>
+    </section>
+    <section class="secExpress">
+        <h2>Express.js</h2>
+        <div>
+            <h3>What is Express.js?</h3>
+            <p>Express is a minimal and flexible and most popular NodeJs web application <b>framework</b> that provides a robust set of features for web and mobile applications. <b>More info -> <a href="https://expressjs.com/" target="_blank">Expressjs.com</a></b></p>
+        </div>
+        <h4>It provides mechanisms to:</h4>
+        <ul>
+            <li>Wirte handlers for requests with different HTTP verbs at different URL paths (routes).</li><br>
+            <li>Integrate with "view" rendering engines in order to generate responses by inserting data into templates.</li><br>
+            <li>Set common web applications settings like the port to use for connecting, and the location of templates that are used for rendering the response.</li><br>
+            <li>Add additional request processing "middleware" at any point within the request handling pipeline.</li>
+        </ul>
+        <p>While Express itself is fairly minimalist, developers have created compatible middleware packages to address almost any web development problem. There are libraries to work with cookies, sessions, users logins, URL parameters, POST data, security headers, and many more.<br>
+        You can find a list of middleware packages maintained by the Express team at <a href="https://expressjs.com/en/resources/middleware.html" target="_blank">Express Middleware</a></p>
+        <h3>What is Middleware?</h3>
+        <p>Middleware is software that lies between an operating system and the applications running on it. Essentially functioning as hidden translation layer, middleware enables communication and data management for distributed applications. It's sometimes called plumbing, as it connects two applications together so data and databases can be easily passed between the "pipe". Using middleware allows users to perform such requests as submitting forms on a web browser, or allowing the web server to return dynamic web pages based on a user's profile. <br><br>
+        Common middleware examples include database middleware, application server middleware, message-oriented middleware, web middleware, and transaction-processing monitors. Each program typically provides messaging services so that different applications can communicate using messaging frameworks like simple object access protocol (SOAP), web services, representational state transfer (REST), and JavaScript object notation (JSON), While all middlware performs communication functions, the type a company chooses to use will depend on waht service is being used and what type of informtacion needs to be communicated. This can include security authentication, transaction management, message queues, applications servers, web servers, and directories. Middleware can also be used for distributed processing with actions occurring in real time rather tan sending data back and forth.</p>
+        <p>Functions that execute during the request to the server, each middleware function has access to request and response object. It is between req => middleware => res . It is used to avoid boilerplate code, just by creating a middleware function, the next step is calling that function in the app.(method).</p>
+        <img src="./img/middlewareExample.png" alt="Middleware Code Example">
+    </section>
 </body>
 </html>
