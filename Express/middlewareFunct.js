@@ -6,9 +6,13 @@ const logger = (req, res, next)=>{
     console.log(`Method used: ${method} \nUrl: ${url}\nTime: ${time}`);
     //* You can end the response in this middleware function or even you can pass to the next middleware function
     //? res.send() to end and send the response
-    res.send('Ending with middleware function.');
+    // res.send('Ending with middleware function.');
     //? next() to pass to the next function
-    // next();
-};
+    next();
+}
+const authorize = (req,res,next) => {
+    console.log('AUTHORIZE');
+    next();
+}
 
-module.exports = logger;
+module.exports = {logger, authorize};
