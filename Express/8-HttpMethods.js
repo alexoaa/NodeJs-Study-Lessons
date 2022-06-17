@@ -5,16 +5,24 @@ const express = require('express');
 const app = express();
 let { people } = require('./Express/data');
 
+//? Settings
+// app.set('port', process.env.PORT || 5000);
+app.set('json spaces', 2); //Already installed JSON viewer extension
+
+
 //? Example for using POST Method 
 
 // statis assets
 app.use(express.static('./Express/methods-public'));
 
+//? Middlewares
 // parse form data
 app.use(express.urlencoded({ extended: false }));
 // parse json
 app.use(express.json());
 
+
+//? Routes
 //* GET METHOD - DEFAULT THAT BROWSER PERFORM - FOR READ DATA
 app.get('/api/people', (req, res) => {
     res.status(200).json(people);
