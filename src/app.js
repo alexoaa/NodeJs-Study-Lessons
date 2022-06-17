@@ -9,7 +9,7 @@ app.use(express.json()); //To convert data recieved into json
 
 //* Routes
 
-app.get('/', require('./routes/dogs'));
+app.use('/', require('./routes/dogs'));
 
 //* Starting the server
 app.listen(app.get('port'), ()=>{

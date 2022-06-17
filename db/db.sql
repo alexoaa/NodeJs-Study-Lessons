@@ -30,3 +30,7 @@ INSERT INTO dogs (name, breed, age, gender)VALUES ('Nicole', 'Mastin/Pitbull', 3
 INSERT INTO dogs (name, breed, age, gender)VALUES ('Morgan', 'Akita', 1, 'M');
 
 DELETE FROM dogs WHERE id = 11;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'admin123';
+
+flush privileges;
