@@ -7,10 +7,12 @@ CREATE TABLE dogs (
     age INT DEFAULT NULL,
     gender VARCHAR(1) DEFAULT NULL CONSTRAINT Chk_Gender CHECK (gender = 'M' OR GENDER = 'F')
 );
+SHOW TABLES;
 
 DESCRIBE dogs;
 
 SELECT * FROM dogs;
+SELECT * FROM dogs WHERE id = 18;
 
 UPDATE dogs SET age = 4 WHERE id = 2;
 
